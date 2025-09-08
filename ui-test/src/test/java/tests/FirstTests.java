@@ -12,5 +12,5 @@ public class FirstTests extends BaseUITest {
         page.navigate(BASE_URL);
         System.out.println(page.title());
         assertThat(page).hasURL(BASE_URL);
-    }//new
+    }//new new2
 }
