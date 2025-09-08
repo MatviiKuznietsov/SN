@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven'   // Имя Maven из Manage Jenkins → Global Tool Configuration
+        jdk 'Java21'     // Имя JDK из Global Tool Configuration
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -22,4 +27,3 @@ pipeline {
         }
     }
 }
-
